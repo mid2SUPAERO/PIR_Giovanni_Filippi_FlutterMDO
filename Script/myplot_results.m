@@ -6,7 +6,7 @@ platform = upper(platform);
 
 % Plot results for dt
 dt = load(['dt_results_' platform]);
-[~,~,~,~,stateCon,objComp] = qcar_new_objective_open();
+[~,~,~,~,stateCon,objComp] = wing_new_objective_open();
 myplot_dt(dt.out1, dt.t01, dt.t02, objComp, stateCon);
 
 % Plot results for seq
